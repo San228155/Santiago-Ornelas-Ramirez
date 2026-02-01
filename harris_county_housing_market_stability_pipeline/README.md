@@ -1,5 +1,6 @@
-# properties_harris_county_pipeline
-Pipeline of harris county properties
+# Housing Market Stability Analysis Pipeline in Harris County from 2017 to 2025
+
+## Client Background
 
 # Databricks Medallion Architecture
 
