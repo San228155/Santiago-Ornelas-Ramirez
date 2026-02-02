@@ -28,11 +28,15 @@ Detailed schemas, metrics, and pipeline flow diagrams are documented in the Desi
 
 ### Input Data Requirements
 
-Raw source data is expected to be delivered as uncompressed files (.txt files) to the configured landing location (this is the natural format from the Harris County Property Data Site).
+Raw source data is recuperated from two sources, the Harris County Property Data Website <sup><a href="#note2">3</a></sup> and from https://www.zip-codes.com/county/tx-harris.asp
 
-Raw files are treated as immutable inputs and are first registered in the Bronze layer.
+Raw source data from the Harris County Property Data Website is expected to be delivered as uncompressed files (.txt files) to the configured landing location (this is the natural format from the Harris County Property Data Website)
 
-Note: Raw data files are not included in this repository. The Bronze layer defines the ingestion contract for all source data.
+Raw source data from www.zip-codes.com is recovered automatically through web scrapping
+
+Raw files are treated as immutable inputs and are first registered in the Bronze layer
+
+Note: Raw data files are not included in this repository. The Bronze layer defines the ingestion contract for all source data
 
 ### Notebook Structure & Execution
 
@@ -51,7 +55,7 @@ Navigate to Databricks → Jobs
 
 Select the job associated with this project
 
-Job configuration, task dependencies, and execution order are defined in the jobs/jobs.json file, which reflects the production orchestration setup.
+Job configuration, task dependencies, and execution order are defined in the jobs/jobs.json file, which reflects the production orchestration setup
 
 ### Output & Data Contracts
 
