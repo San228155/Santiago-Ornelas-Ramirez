@@ -9,7 +9,7 @@
 
 ## Personal Profile
 
-Data Engineer with hands-on experience building **end-to-end data pipelines** on Databricks. Background includes designing ETL workflows, implementing data quality checks, and delivering analytics-ready datasets using medallion architecture.
+Data Engineer with hands-on experience building **end-to-end data pipelines** on Databricks. Background includes designing ETL workflows, implementing data quality checks, and delivering analytics ready datasets using medallion architecture.
 
 ---
 
