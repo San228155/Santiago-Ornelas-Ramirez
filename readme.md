@@ -2,7 +2,7 @@
 **Houston, TX**  
 **Mobile:** (832) 674-5470  
 **Email:** santi.orn.ram@gmail.com  
-**LinkedIn:**  
+**LinkedIn:** https://www.linkedin.com/in/santiago-ornelas-712438351/
 **GitHub:** https://github.com/San228155/Santiago-Ornelas-Ramirez  
 
 ---
