@@ -2,8 +2,8 @@
 **Houston, TX**  
 **Mobile:** (832) 674-5470  
 **Email:** santi.orn.ram@gmail.com  
-**LinkedIn:** https://xxx.com/in/yourprofile  
-**GitHub:** https://xxx.com/yourusername  
+**LinkedIn:** 
+**GitHub:** 
 
 ---
 
