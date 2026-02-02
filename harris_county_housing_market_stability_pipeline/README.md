@@ -22,13 +22,67 @@ Metrics:
 We determine that the Housing Market in Harris County for 2nd quartile, in earnings, in is stable. 
 
 ## How to Use
-This project is built on data bricks. It uses job orchestration from the job runs tab in databricks using notebooks to execute all parts of the medallion architecture. 
+This project implements an end-to-end Databricks pipeline that processes Harris County property data using a medallion architecture (Bronze, Silver, Gold). Pipeline execution is orchestrated via Databricks Jobs, with notebooks executed in a predefined order.
 
+Detailed schemas, metrics, and pipeline flow diagrams are documented in the Design Specification, which serves as the authoritative reference for this project.
+
+### Input Data Requirements
+
+Raw source data is expected to be delivered as uncompressed files (.txt files) to the configured landing location (this is the natural format from the Harris County Property Data Site).
+
+Raw files are treated as immutable inputs and are first registered in the Bronze layer.
+
+Note: Raw data files are not included in this repository. The Bronze layer defines the ingestion contract for all source data.
+
+### Notebook Structure & Execution
+
+Notebooks are organized by medallion layer and numbered to indicate execution order:
+
+Folder name represents the pipeline layer (Bronze / Silver / Gold)
+
+Each notebook is designed to be rerunnable and idempotent
+
+Execution can be triggered either manually (for development) or via Databricks Jobs (for production runs)
+
+### Running the Pipeline
+Databricks Job Execution (Recommended)
+
+Navigate to Databricks → Jobs
+
+Select the job associated with this project
+
+Job configuration, task dependencies, and execution order are defined in the jobs/jobs.json file, which reflects the production orchestration setup.
+
+### Output & Data Contracts
+
+Final, analytics-ready tables are published in the Gold layer
+
+Table structures, relationships, and metrics are defined in the Design Specification
+
+Downstream consumers should rely on Gold tables only
+
+The intended customer are Data Analysts as the final product are tables with simple data structures, ideal to use for further visualization
+
+All required table creation is managed internally as to allow visibility of the data throught the project
+
+### Monitoring & Troubleshooting
+
+Execution status and logs are available in Databricks Job Runs
+
+Failed tasks prevent downstream execution
+
+Individual notebooks may be rerun independently if remediation is required
+
+All runs are logged in three different ways
+- Pipeline runs - Logs the execution of all notebooks, independently, most importantly noting if the execution was succesful or not, in which case also noting the error
+- Data quality runs- Logs the execution of unit tests for a notebook, independently, noting if the test was successful or not, including the error. This registers the most important data quality checks and will shut down the notebook and pipeline if it finds any
+- Metrics - Logs metrics accumulated thorught the process of the pipeline. This does not shut down a notebook or pipeline and all metric descriptions are given in the design spec.
 
 ## Technology
 - Databricks
 - Pyspark
 - Sql
+- Beautiful Soup
 
 #Notes
 
