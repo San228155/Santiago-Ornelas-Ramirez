@@ -13,21 +13,27 @@ Data Engineer with hands-on experience building **end-to-end data pipelines** on
 
 ---
 
-## Skills
+<table>
+  <tr>
+    <td>
 
-**Technical Skills**
+### **Technical Skills**
 - SQL, Python, PySpark, R  
 - Databricks, AWS, Docker  
 - Excel, BeautifulSoup (web scraping)
+    </td>
+    <td>
 
-**Languages**
+### **Languages**
 - English (Fluent)  
 - Spanish (Fluent)
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## Portfolio
-
 ### Harris County Housing Stability Pipeline
 *End-to-end Databricks data engineering project*
 
@@ -37,18 +43,16 @@ Data Engineer with hands-on experience building **end-to-end data pipelines** on
 - Integrated **data quality, integrity, and unit tests** across pipeline layers
 - Implemented logging for errors and key metrics to improve observability
 - Authored a **Design Specification** defining schemas, metrics, and job flow
-
 ---
 
 ## Education
 
 **B.S. in Applied Mathematics (2022–2025)**  
 University of Twente, The Netherlands
-
 ---
 
 ## Additional Skills
 - High degree of conceptual knowledge of Data Science and Machine Learning
 - Thesis in: Optimal Hyper Parameter Selection for Training Neural Networks with Heaviside Function
 - Highly adaptable to diverse cultural and professional environments
-- Advanced knowledge in Statistics (hypothesis testing, ARMA processes, Statistical Learning, Stochastic Processes, Markov Chains, and Queueing Theory)
+- Advanced knowledge in Statistics (Hypothesis Testing, ARMA processes, Statistical Learning, Stochastic Processes, Markov Chains, and Queueing Theory)
