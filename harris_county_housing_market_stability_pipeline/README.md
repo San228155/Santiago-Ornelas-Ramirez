@@ -15,11 +15,16 @@ We provide an pipeline from Harris County's Property data <sup><a href="#note2">
 ## Summary
 ### Executive summary
 Metrics:
-- There are enough available houses for this population for the year 2025. We wanted at least 500 thousand houses and there are over 600 thousand available homes in this bracket.
-- The 2nd quartile of earnes have a very stable market (having the median house having between 4 and 8 years since its last bracket change). Although this is not the most stable (1st quartile has the medain house have more than 8 years change), but it is more stable than the 4th quartile (whose median house has between 2 and 4 years sincce last bracket change).
-- We see that the median bracket changes per house is 1, where only houses in the 1st bracket has a different median with 0.
+The 2025 analysis of the Harris County housing market indicates that housing supply is sufficient and pricing dynamics are stable for households in the second income quartile.
 
-We determine that the Housing Market in Harris County for 2nd quartile, in earnings, in is stable. 
+Housing availability exceeds expectations, with over 600,000 homes meeting eligibility criteria against a target of 500,000, signaling adequate inventory to support current population needs.
+
+Price stability metrics further support this assessment. Homes in the second income quartile exhibit moderate price consistency, with a median of 4–8 years since the last bracket change. While the first quartile remains the most stable segment, the second quartile demonstrates meaningfully greater stability than higher-income segments, where prices shift more frequently.
+
+Overall market volatility is limited, as the median number of bracket changes per home is one, indicating that most properties experience minimal reclassification over time.
+
+Conclusion:
+The Harris County housing market for second-quartile earners in 2025 is stable and well-supplied. Although not the most static segment of the market, it offers availability and price predictability, positioning suitable housing options for this income group.
 
 ## How to Use
 This project implements an end-to-end Databricks pipeline that processes Harris County property data using a medallion architecture (Bronze, Silver, Gold). Pipeline execution is orchestrated via Databricks Jobs, with notebooks executed in a predefined order.
