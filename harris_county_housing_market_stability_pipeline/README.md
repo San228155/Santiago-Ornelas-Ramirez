@@ -31,6 +31,7 @@ This project implements an end-to-end Databricks pipeline that processes Harris 
 
 Detailed schemas, metrics, and pipeline flow diagrams are documented in the Design Specification, which serves as the authoritative reference for this project.
 
+
 ### Input Data Requirements
 
 Raw source data is recuperated from two sources, the Harris County Property Data Website <sup><a href="#note2">3</a></sup> and from https://www.zip-codes.com/county/tx-harris.asp
@@ -53,14 +54,11 @@ Each notebook is designed to be rerunnable and idempotent
 
 Execution can be triggered either manually (for development) or via Databricks Jobs (for production runs)
 
-### Running the Pipeline
-Databricks Job Execution (Recommended)
+### How to run this project
 
-Navigate to Databricks → Jobs
-
-Select the job associated with this project
-
-Job configuration, task dependencies, and execution order are defined in the jobs/jobs.json file, which reflects the production orchestration setup
+1. In Databricks, go to Repos → Add Repo → paste this GitHub URL.
+2. Open Jobs → Create Job → Import → select jobs.json (found in jobs folder in this repo)
+3. The job will automatically reference the notebooks inside the repo
 
 ### Output & Data Contracts
 
