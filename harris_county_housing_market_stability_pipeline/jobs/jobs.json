@@ -13,6 +13,11 @@
   "tasks": [
     {
       "task_key": "bronze_owners",
+      "depends_on": [
+        {
+          "task_key": "init_schema"
+        }
+      ],
       "run_if": "ALL_SUCCESS",
       "notebook_task": {
         "notebook_path": "/Workspace/Users/santi4.linebacker@gmail.com/harris_county_property_job/Pipeline/bronze_pipeline (1)/owners_bronze",
@@ -23,7 +28,23 @@
       "webhook_notifications": {}
     },
     {
+      "task_key": "init_schema",
+      "run_if": "ALL_SUCCESS",
+      "notebook_task": {
+        "notebook_path": "/Workspace/Users/santi4.linebacker@gmail.com/harris_county_property_job/Pipeline/init_schema",
+        "source": "WORKSPACE"
+      },
+      "timeout_seconds": 0,
+      "email_notifications": {},
+      "webhook_notifications": {}
+    },
+    {
       "task_key": "bronze_property",
+      "depends_on": [
+        {
+          "task_key": "init_schema"
+        }
+      ],
       "run_if": "ALL_SUCCESS",
       "notebook_task": {
         "notebook_path": "/Workspace/Users/santi4.linebacker@gmail.com/harris_county_property_job/Pipeline/bronze_pipeline (1)/property_bronze",
@@ -36,6 +57,11 @@
     },
     {
       "task_key": "bronze_zip_code",
+      "depends_on": [
+        {
+          "task_key": "init_schema"
+        }
+      ],
       "run_if": "ALL_SUCCESS",
       "notebook_task": {
         "notebook_path": "/Workspace/Users/santi4.linebacker@gmail.com/harris_county_property_job/Pipeline/bronze_pipeline (1)/zip_codes_bronze",
@@ -106,7 +132,8 @@
         "source": "WORKSPACE"
       },
       "timeout_seconds": 0,
-      "email_notifications": {}
+      "email_notifications": {},
+      "webhook_notifications": {}
     }
   ],
   "queue": {
