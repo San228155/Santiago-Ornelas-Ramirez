@@ -79,6 +79,8 @@ The Repo must have this strucutre for the job to run
 2. Open Jobs → Create Job → Import → select jobs.json (found in jobs folder in this repo)
 3. The job will automatically reference the notebooks inside the repo
 
+This file uses a for_each_task for loop with parameters [2017,2018,...,2025]. These parameters are already included inside the jobs.json file
+
 ### Output & Data Contracts
 
 Final, analytics-ready tables are published in the Gold layer
