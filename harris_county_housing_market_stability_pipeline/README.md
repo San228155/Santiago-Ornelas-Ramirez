@@ -54,6 +54,25 @@ Each notebook is designed to be rerunnable and idempotent
 
 Execution can be triggered either manually (for development) or via Databricks Jobs (for production runs)
 
+The Repo must have this strucutre for the job to run
+/Repo
+  /h_c_notebooks
+    /bronze
+      owners_bronze
+      property_bronze
+      zip_codes_bronze
+    /silver
+      owners_silver
+      property_silver
+      zip_codes_silver
+      joined_silver
+    /gold
+      Gold_layer
+      scd_gold
+    /logging
+      log_notebook
+    init_schema
+
 ### How to run this project
 
 1. In Databricks, go to Repos → Add Repo → paste this GitHub URL.
