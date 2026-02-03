@@ -114,6 +114,6 @@ All runs are logged in three different ways
 
 #Notes
 
-<a id="note1"></a>1. Harris County has a population of 5 million, the target percentile has a quarter of that population and the average household in the county is 2.5, hence we have 5,000,000/(4*2.5) = 500,000  
+<a id="note1"></a>1. Harris County has a population of 5 million, the target percentile has a quarter of that population and the average household in the county is 2.5. Hence we have 5,000,000/(4*2.5) = 500,000  
 <a href="#note2"></a>2. a1 or a2 is the naming convention given in directly from the property information from Harris County
 <a href="#note2"></a>3. https://hcad.org/pdata/pdata-property-downloads.html
