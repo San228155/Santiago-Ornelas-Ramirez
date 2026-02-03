@@ -73,6 +73,39 @@ The Repo must have this strucutre for the job to run
       log_notebook
     init_schema
 
+This project expects the user to create a Catalog with name: harris_county_catalog.
+The catalog will have the followning architecture that will be created automatically
+
+/harris_county_catalog
+  /raw_data
+    /owners
+      /raw_owners_{year}.txt
+      ...
+    /property
+      /raw_property_{year}.txt
+      ...
+  /bronze
+    /bronze_owners_{year}
+    ...
+    /bronze_property_{year}
+    ...
+  /silver
+    /cummulative_property_owners
+  /gold
+    /amount_of_quartile_changes
+    /cummulative_scd
+    /properties_in_quartile
+    /stability_categorization
+  /logging
+    /log_data_quality_tests
+    /log_pipe_line_runs
+    /log_table_metrics
+  /validation
+    /owners_validate
+    /property_validate
+    /zip_validate
+  
+
 ### How to run this project
 
 1. In Databricks, go to Repos → Add Repo → paste this GitHub URL.
