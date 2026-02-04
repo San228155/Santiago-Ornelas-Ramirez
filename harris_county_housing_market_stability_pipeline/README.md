@@ -111,6 +111,26 @@ The catalog will have the followning architecture that will be created automatic
   - the files in raw_data are .txt files (with delimiter /t)
   - The files with an input {year} are parameters with range [2017,2018...,2025]. If this needs to be changed, the user must add the necessary data and change the inputs in
 
+Medallion Architecture Rules
+- Bronze:
+  - Ingest all copy without transformations. Only change the incoming file type to delta table
+  - We do not allow shcema evolution. If a column is not in the previously specified schema, it is dropped
+- Silver
+  - Clean Data
+    - No dupicates or nulls in primary keys
+    - Minimum volume of valid data (specifics in tests in design spec)
+    - No values out of range (specifics in tests in design spec)
+  - Schema enforcment
+    - All columns of schema must exist
+    - Columns must comply with predetermined data type
+  - Business rules are not enforced
+- Gold
+  - Business rules enforced
+  - Aggregate tables
+    - SCD
+    - types of other tables (update)  
+
+
 ### How to run this project
 
 1. In Databricks, go to Repos → Add Repo → paste this GitHub URL.
@@ -119,7 +139,7 @@ The catalog will have the followning architecture that will be created automatic
 
 This file uses a for_each_task for loop with parameters [2017,2018,...,2025]. These parameters are already included inside the jobs/jobs.json file for all 4 "for each" loops.
 
-### Output & Data Contracts
+### Output & Data Contracts (update)
 
 Final, analytics-ready tables are published in the Gold layer
 
