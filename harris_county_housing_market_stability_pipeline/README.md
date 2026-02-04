@@ -73,8 +73,10 @@ The Repo must have this strucutre for the job to run
       log_notebook
     init_schema
 
-This project expects the user to create a Catalog with name: harris_county_catalog.
-The catalog will have the followning architecture that will be created automatically
+
+This project expects the user to create a Catalog with name: harris_county_catalog
+
+The catalog will have the followning architecture that will be created automatically (except for the catalog)
 
 /harris_county_catalog
   /raw_data
@@ -104,7 +106,10 @@ The catalog will have the followning architecture that will be created automatic
     /owners_validate
     /property_validate
     /zip_validate
-  
+
+  Comments:
+  - the files in raw_data are .txt files (with delimiter /t)
+  - The files with an input {year} are parameters with range [2017,2018...,2025]. If this needs to be changed, the user must add the necessary data and change the inputs in
 
 ### How to run this project
 
@@ -112,7 +117,7 @@ The catalog will have the followning architecture that will be created automatic
 2. Open Jobs → Create Job → Import → select jobs.json (found in jobs folder in this repo)
 3. The job will automatically reference the notebooks inside the repo
 
-This file uses a for_each_task for loop with parameters [2017,2018,...,2025]. These parameters are already included inside the jobs.json file
+This file uses a for_each_task for loop with parameters [2017,2018,...,2025]. These parameters are already included inside the jobs/jobs.json file for all 4 "for each" loops.
 
 ### Output & Data Contracts
 
