@@ -42,7 +42,7 @@ Data Engineer with hands-on experience building **end-to-end data pipelines** on
 ---
 ### Bike Data Set Pipeline (Simulated Data Set)
 
-- Designed and imlpemented **Medallion architecture** to analyze a simulated data set using meta data transformations, CI/CD pipelines, strict data quality, and auditability
+- Designed and implemented **Medallion architecture** databricks job to analyze a simulated data set using **meta data transformations**, **CI/CD** pipelines, strict **data quality**, and **auditability**
 
 ## Education
 
