@@ -18,9 +18,9 @@ Data Engineer with hands-on experience building **end-to-end data pipelines** on
     <td>
 
 ### **Technical Skills**
-- SQL, Python, PySpark, R  
-- Databricks, AWS, Docker  
-- Excel, BeautifulSoup (web scraping)
+- **SQL**, Python, **PySpark**, R, Julia 
+- **Databricks**, AWS, Docker
+- **Data Modeling**, Excel, BeautifulSoup (web scraping)
     </td>
     <td>
 
@@ -37,12 +37,12 @@ Data Engineer with hands-on experience building **end-to-end data pipelines** on
 *End-to-end Databricks data engineering projects*
 ### Harris County Housing Stability Pipeline (Real Data Set)
 
-- Designed and implemented a **Bronze–Silver–Gold (medallion) architecture** to analyze housing market stability in Harris County with **Design Specification** defining schemas, metrics, and job flow
-- Orchestrated notebook execution using **Databricks Jobs** with integrated **data quality, integrity, and unit tests** across pipeline layers and logging for errors and key metrics to improve observability
+- Designed and implemented a **Bronze–Silver–Gold (medallion) architecture** to analyze housing market stability in Harris County with **Design Specification** defining schemas, metrics, and job flow using **OBT** Table data model
+- Orchestrated notebook execution using **Databricks Jobs** with integrated **data quality, integrity, and unit tests** across pipeline layers and **logging** for errors and key metrics to improve observability
 ---
 ### Bike Data Set Pipeline (Simulated Data Set)
 
-- Designed and implemented **Medallion architecture** databricks job to analyze a simulated data set using **meta data transformations**, **CI/CD** pipelines, strict **data quality**, and **auditability**
+- Designed and implemented **Medallion architecture** **Databricks Job** to analyze a simulated data set using **meta data transformations**, **CI/CD** pipelines, strict **data quality**, and **auditability** using **Kimball** data model
 
 ## Education
 
