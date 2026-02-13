@@ -50,6 +50,10 @@ Data Engineer with hands-on experience building **end-to-end data pipelines** on
 University of Twente, The Netherlands
 ---
 
+## Certification
+Databricks Certified Data Engineer Associate (in progress)
+---
+
 ## Additional Skills
 - High degree of conceptual knowledge of Data Science, Machine Learning, and Deep Learning
 - Thesis in: Optimal Hyper Parameter Selection for Training Neural Networks with Heaviside Function
