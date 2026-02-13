@@ -50,7 +50,7 @@ Data Engineer with hands-on experience building **end-to-end data pipelines** on
 University of Twente, The Netherlands
 ---
 
-## Certification
+## Certification  
 
 Databricks Certified Data Engineer Associate (in progress)
 ---
