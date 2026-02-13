@@ -51,6 +51,7 @@ University of Twente, The Netherlands
 ---
 
 ## Certification
+
 Databricks Certified Data Engineer Associate (in progress)
 ---
 
